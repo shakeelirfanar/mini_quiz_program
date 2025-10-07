@@ -1,26 +1,31 @@
-# Maximum Subarray Sum (Kadane’s Algorithm)
+# 🎯 Mini Quiz Game (Java)
 
-## 🧩 Problem Description
-Sami is studying B.Tech in Software Engineering and has been assigned a program by his professor to boost his internal marks.  
-He must find the **maximum sum of a contiguous subarray** within a given array of integers.
-
-The task is to implement an efficient algorithm (Kadane’s Algorithm) to solve this problem in **O(n)** time.
+## 📖 Project Overview
+This project is a **console-based Java quiz application** that tests users’ knowledge of core Java concepts.  
+It presents a series of **multiple-choice questions**, accepts user input, checks the correctness of each answer, and displays the final score.
 
 ---
 
-## 🧠 Functional Description
-A subarray is a contiguous part of an array.  
-The goal is to find the subarray that gives the **largest possible sum**.
-
-Naive solutions check all subarrays (O(n²)), but Kadane’s Algorithm achieves the same in O(n) by:
-1. Scanning through the array once.
-2. Tracking the running sum and resetting it when it drops below zero.
-3. Maintaining the maximum sum found so far.
+## 🧠 Features
+- Interactive **command-line quiz**.
+- Multiple-choice questions with **4 options each**.
+- Real-time feedback: “Correct” or “Incorrect”.
+- Final score display.
+- Uses **Java arrays** and **loops** for clean logic.
+- Demonstrates concepts like **arrays**, **input handling**, and **conditionals**.
 
 ---
 
-## ⚙️ Input Format
-- The first line contains a single integer `n` — the number of elements.
-- The second line contains `n` integers — the array elements.
+## ⚙️ How It Works
+1. The program stores:
+   - Questions in a `String[] questions` array.
+   - Options in a 2D `String[][] options` array.
+   - Correct answers in an `int[] answer` array.
+2. It displays one question at a time.
+3. The user enters their answer as an integer.
+4. The program compares the user’s answer with the correct one.
+5. The user’s score is updated and displayed at the end.
 
-### Example:
+---
+
+## 🧾 Example Run
